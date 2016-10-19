@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pw Home</string>
+    <string name="home_url" translatable="false">http://phil-wise.com/locator/</string>
+</resources>
