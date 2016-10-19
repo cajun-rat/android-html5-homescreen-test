@@ -1,0 +1,5 @@
+# Android Homescreen in HTML5
+
+Often it is useful to be able to use a Android device as a headless web browser, for example for digital signs or dashboards.
+
+This example uses WebView and registers as a homescreen on Android, so that it starts up automatically when the device is booted.
