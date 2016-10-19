@@ -3,3 +3,13 @@
 Often it is useful to be able to use a Android device as a headless web browser, for example for digital signs or dashboards.
 
 This example uses WebView and registers as a homescreen on Android, so that it starts up automatically when the device is booted.
+
+## Bugs
+
+It doesn't wait until the device has Internet connectivity before trying to connect. This would be easy to fix by watching for `android.net.conn.CONNECTIVITY_CHANGE` broadcasts.
+
+## Uninstalling
+
+Because this app takes over the homescreen, the normal way to get to the settings menu to uninstall it (via the homescreen) isn't possible.  The settings menu can still be reached by swiping down from the taskbar twice, then picking the settings option in the top right. Alternatively, you can uninstall via adb:
+
+    adb uninstall com.phil_wise.pwhome
